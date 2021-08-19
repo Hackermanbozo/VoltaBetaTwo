@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Volta Script</title>
+    <link rel="stylesheet" type="text/css"
+    href="mainc.css"> 
+
+    </head>
+    <body>
+        <script src="javascript.js"></script>
+        <h1>Volta</h1>
+        <h3>warning this website cotains only the beta2.0 of the script</h3>
+        <h6>The Volta Script</h6><br><br><br>
+        
+        <a href="https://discord.gg/8eKshbepET">Help</a>
+        
+        <table border="10">
+
+             <tr>
+                 <th>game.StarterGui:SetCore("SendNotification", {
+                    Title = "Discord Serevr";
+                    Text = "https://discord.gg/8eKshbepET , copied to clipboard";
+                    Duration = 5;
+                })
+                
+                setclipboard('https://discord.gg/8eKshbepET')
+                
+                local VOLTABeta = Instance.new("ScreenGui")
+                local LoginWin = Instance.new("Frame")
+                local TopPRopet = Instance.new("TextLabel")
+                local Corners = Instance.new("UICorner")
+                local Corners_2 = Instance.new("UICorner")
+                local Username = Instance.new("TextBox")
+                local Corners_3 = Instance.new("UICorner")
+                local Password = Instance.new("TextBox")
+                local Corners_4 = Instance.new("UICorner")
+                local Login = Instance.new("TextButton")
+                local Corners_5 = Instance.new("UICorner")
+                local Discord = Instance.new("TextLabel")
+                local Corners_6 = Instance.new("UICorner")
+                local Home = Instance.new("Frame")
+                local Corners_7 = Instance.new("UICorner")
+                local HTOP = Instance.new("TextLabel")
+                local Corners_8 = Instance.new("UICorner")
+                local Execute = Instance.new("TextButton")
+                local Corners_9 = Instance.new("UICorner")
+                local Discord_2 = Instance.new("TextLabel")
+                local Corners_10 = Instance.new("UICorner")
+                local Main = Instance.new("Frame")
+                local Corner = Instance.new("UICorner")
+                local Welcome = Instance.new("TextLabel")
+                local Corner_2 = Instance.new("UICorner")
+                local Icon = Instance.new("ImageLabel")
+                local Corner_3 = Instance.new("UICorner")
+                local ScrollingFrame = Instance.new("ScrollingFrame")
+                local Fly = Instance.new("TextButton")
+                local Corner_4 = Instance.new("UICorner")
+                local Noclip = Instance.new("TextButton")
+                local Corner_5 = Instance.new("UICorner")
+                local MouseFists = Instance.new("TextButton")
+                local Corner_6 = Instance.new("UICorner")
+                local Esp = Instance.new("TextButton")
+                local AimLock = Instance.new("TextButton")
+                local Corner_7 = Instance.new("UICorner")
+                
+                --Properties:
+                
+                VOLTABeta.Name = "VOLTABeta"
+                VOLTABeta.Parent = game.CoreGui
+                
+                
+                LoginWin.Name = "LoginWin"
+                LoginWin.Parent = VOLTABeta
+                LoginWin.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+                LoginWin.Position = UDim2.new(0.0473448485, 0, 0.290465623, 0)
+                LoginWin.Size = UDim2.new(0, 302, 0, 433)
+                LoginWin.Active = true
+                LoginWin.Draggable = true
+                
+                TopPRopet.Name = "TopPRopet"
+                TopPRopet.Parent = LoginWin
+                TopPRopet.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+                TopPRopet.Size = UDim2.new(0, 302, 0, 37)
+                TopPRopet.ZIndex = 2
+                TopPRopet.Font = Enum.Font.SourceSans
+                TopPRopet.Text = "Login"
+                TopPRopet.TextColor3 = Color3.fromRGB(0, 207, 239)
+                TopPRopet.TextScaled = true
+                TopPRopet.TextSize = 14.000
+                TopPRopet.TextWrapped = true
+                
+                Corners.Name = "Corners"
+                Corners.Parent = TopPRopet
+                
+                Corners_2.Name = "Corners"
+                Corners_2.Parent = LoginWin
+                
+                Username.Name = "Username"
+                Username.Parent = LoginWin
+                Username.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+                Username.Position = UDim2.new(0.168874174, 0, 0.244803697, 0)
+                Username.Size = UDim2.new(0, 200, 0, 50)
+                Username.Font = Enum.Font.SourceSans
+                Username.Text = "UserName"
+                Username.TextColor3 = Color3.fromRGB(0, 0, 0)
+                Username.TextScaled = true
+                Username.TextSize = 14.000
+                Username.TextWrapped = true
+                
+                Corners_3.Name = "Corners"
+                Corners_3.Parent = Username
+                
+                Password.Name = "Password"
+                Password.Parent = LoginWin
+                Password.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+                Password.Position = UDim2.new(0.168874174, 0, 0.441108525, 0)
+                Password.Size = UDim2.new(0, 200, 0, 50)
+                Password.Font = Enum.Font.SourceSans
+                Password.Text = "Password"
+                Password.TextColor3 = Color3.fromRGB(0, 0, 0)
+                Password.TextScaled = true
+                Password.TextSize = 14.000
+                Password.TextWrapped = true
+                
+                Corners_4.Name = "Corners"
+                Corners_4.Parent = Password
+                
+                Login.Name = "Login"
+                Login.Parent = LoginWin
+                Login.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+                Login.Position = UDim2.new(0.168874174, 0, 0.637413383, 0)
+                Login.Size = UDim2.new(0, 200, 0, 50)
+                Login.Font = Enum.Font.Arcade
+                Login.Text = "Login"
+                Login.TextColor3 = Color3.fromRGB(149, 0, 255)
+                Login.TextScaled = true
+                Login.TextSize = 14.000
+                Login.TextWrapped = true
+                Login.MouseButton1Down:Connect(function()
+                    if Username.Text == game.Players.LocalPlayer.Name then
+                        if Password.Text == "GYXOMA VOLTA" then
+                            LoginWin.Visible = false
+                            Home.Visible = true
+                        end
+                
+                    end
+                end)
+                
+                Corners_5.Name = "Corners"
+                Corners_5.Parent = Login
+                
+                Discord.Name = "Discord"
+                Discord.Parent = LoginWin
+                Discord.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+                Discord.Position = UDim2.new(-0.000917144178, 0, 0.834451497, 0)
+                Discord.Size = UDim2.new(0, 302, 0, 50)
+                Discord.Font = Enum.Font.SourceSans
+                Discord.Text = " all the login infomation in our discord Discord:https://discord.gg/8eKshbepET"
+                Discord.TextColor3 = Color3.fromRGB(0, 0, 0)
+                Discord.TextSize = 14.000
+                Discord.TextWrapped = true
+                
+                Corners_6.Name = "Corners"
+                Corners_6.Parent = Discord
+                
+                Home.Name = "Home"
+                Home.Parent = VOLTABeta
+                Home.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+                Home.Position = UDim2.new(0.264875233, 0, 0.378048778, 0)
+                Home.Size = UDim2.new(0, 426, 0, 274)
+                Home.Visible = false
+                Home.Active = true
+                Home.Draggable = true
+                
+                
+                Corners_7.Name = "Corners"
+                Corners_7.Parent = Home
+                
+                HTOP.Name = "HTOP"
+                HTOP.Parent = Home
+                HTOP.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+                HTOP.Size = UDim2.new(0, 426, 0, 35)
+                HTOP.Font = Enum.Font.SourceSans
+                HTOP.Text = "Home"
+                HTOP.TextColor3 = Color3.fromRGB(0, 207, 239)
+                HTOP.TextScaled = true
+                HTOP.TextSize = 14.000
+                HTOP.TextWrapped = true
+                
+                Corners_8.Name = "Corners"
+                Corners_8.Parent = HTOP
+                
+                Execute.Name = "Execute"
+                Execute.Parent = Home
+                Execute.BackgroundColor3 = Color3.fromRGB(56, 56, 56)
+                Execute.Position = UDim2.new(0.265258223, 0, 0.37956205, 0)
+                Execute.Size = UDim2.new(0, 200, 0, 50)
+                Execute.Font = Enum.Font.Arcade
+                Execute.Text = "Execute"
+                Execute.TextColor3 = Color3.fromRGB(115, 0, 255)
+                Execute.TextScaled = true
+                Execute.TextSize = 14.000
+                Execute.TextWrapped = true
+                Execute.MouseButton1Down:Connect(function()
+                    Home.Visible = false
+                    Main.Visible = true
+                end)
+                
+                Corners_9.Name = "Corners"
+                Corners_9.Parent = Execute
+                
+                Discord_2.Name = "Discord"
+                Discord_2.Parent = Home
+                Discord_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+                Discord_2.Position = UDim2.new(0.0586854443, 0, 0.718978107, 0)
+                Discord_2.Size = UDim2.new(0, 375, 0, 50)
+                Discord_2.Font = Enum.Font.SourceSans
+                Discord_2.Text = "Discord:https://discord.gg/8eKshbepET"
+                Discord_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+                Discord_2.TextSize = 14.000
+                Discord_2.TextWrapped = true
+                
+                Corners_10.Name = "Corners"
+                Corners_10.Parent = Discord_2
+                
+                Main.Name = "Main"
+                Main.Parent = VOLTABeta
+                Main.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+                Main.Position = UDim2.new(0.581573904, 0, 0.273835927, 0)
+                Main.Size = UDim2.new(0, 476, 0, 407)
+                Main.Visible = false
+                Main.Active = true
+                Main.Draggable = true
+                
+                Corner.Name = "Corner"
+                Corner.Parent = Main
+                
+                Welcome.Name = "Welcome"
+                Welcome.Parent = Main
+                Welcome.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+                Welcome.Position = UDim2.new(0.140756309, 0, 0, 0)
+                Welcome.Size = UDim2.new(0, 409, 0, 52)
+                Welcome.ZIndex = 2
+                Welcome.Font = Enum.Font.SourceSans
+                Welcome.Text = "Welcome to VOLTA "..game.Players.LocalPlayer.Name
+                Welcome.TextColor3 = Color3.fromRGB(0, 207, 239)
+                Welcome.TextScaled = true
+                Welcome.TextSize = 14.000
+                Welcome.TextWrapped = true
+                
+                
+                Corner_2.Name = "Corner"
+                Corner_2.Parent = Welcome
+                
+                Icon.Name = "Icon"
+                Icon.Parent = Main
+                Icon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+                Icon.Size = UDim2.new(0, 73, 0, 52)
+                Icon.Image = "http://www.roblox.com/asset/?id=7266581760"
+                
+                Corner_3.Name = "Corner"
+                Corner_3.Parent = Icon
+                
+                ScrollingFrame.Parent = Main
+                ScrollingFrame.Active = true
+                ScrollingFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+                ScrollingFrame.Position = UDim2.new(0.380252123, 0, 0.208845198, 0)
+                ScrollingFrame.Size = UDim2.new(0, 245, 0, 256)
+                
+                Fly.Name = "Fly"
+                Fly.Parent = ScrollingFrame
+                Fly.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+                Fly.Position = UDim2.new(0.0897959173, 0, 0.0147420149, 0)
+                Fly.Size = UDim2.new(0, 200, 0, 50)
+                Fly.Font = Enum.Font.Arcade
+                Fly.Text = "Fly"
+                Fly.TextColor3 = Color3.fromRGB(0, 0, 0)
+                Fly.TextScaled = true
+                Fly.TextSize = 14.000
+                Fly.TextWrapped = true
+                Fly.MouseButton1Down:Connect(function()
+                    game.StarterGui:SetCore("SendNotification", {
+                        Title = "Fly";
+                        Text = "Press x to fly/unfly";
+                        Duration = 5;
+                    })
+                    repeat wait()
+                    until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:findFirstChild("Torso") and game.Players.LocalPlayer.Character:findFirstChild("Humanoid")
+                    local mouse = game.Players.LocalPlayer:GetMouse()
+                    repeat wait() until mouse
+                    local plr = game.Players.LocalPlayer
+                    local torso = plr.Character.Torso
+                    local flying = true
+                    local deb = true
+                    local ctrl = {f = 0, b = 0, l = 0, r = 0}
+                    local lastctrl = {f = 0, b = 0, l = 0, r = 0}
+                    local maxspeed = 50
+                    local speed = 0
+                
+                    function Fly()
+                        local bg = Instance.new("BodyGyro", torso)
+                        bg.P = 9e4
+                        bg.maxTorque = Vector3.new(9e9, 9e9, 9e9)
+                        bg.cframe = torso.CFrame
+                        local bv = Instance.new("BodyVelocity", torso)
+                        bv.velocity = Vector3.new(0,0.1,0)
+                        bv.maxForce = Vector3.new(9e9, 9e9, 9e9)
+                        repeat wait()
+                            plr.Character.Humanoid.PlatformStand = true
+                            if ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0 then
+                                speed = speed+.5+(speed/maxspeed)
+                                if speed > maxspeed then
+                                    speed = maxspeed
+                                end
+                            elseif not (ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0) and speed ~= 0 then
+                                speed = speed-1
+                                if speed < 0 then
+                                    speed = 0
+                                end
+                            end
+                            if (ctrl.l + ctrl.r) ~= 0 or (ctrl.f + ctrl.b) ~= 0 then
+                                bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (ctrl.f+ctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(ctrl.l+ctrl.r,(ctrl.f+ctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed
+                                lastctrl = {f = ctrl.f, b = ctrl.b, l = ctrl.l, r = ctrl.r}
+                            elseif (ctrl.l + ctrl.r) == 0 and (ctrl.f + ctrl.b) == 0 and speed ~= 0 then
+                                bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (lastctrl.f+lastctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(lastctrl.l+lastctrl.r,(lastctrl.f+lastctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed
+                            else
+                                bv.velocity = Vector3.new(0,0.1,0)
+                            end
+                            bg.cframe = game.Workspace.CurrentCamera.CoordinateFrame * CFrame.Angles(-math.rad((ctrl.f+ctrl.b)*50*speed/maxspeed),0,0)
+                        until not flying
+                        ctrl = {f = 0, b = 0, l = 0, r = 0}
+                        lastctrl = {f = 0, b = 0, l = 0, r = 0}
+                        speed = 0
+                        bg:Destroy()
+                        bv:Destroy()
+                        plr.Character.Humanoid.PlatformStand = false
+                    end
+                    mouse.KeyDown:connect(function(key)
+                        if key:lower() == "x" then
+                            if flying then flying = false
+                            else
+                                flying = true
+                                Fly()
+                            end
+                        elseif key:lower() == "w" then
+                            ctrl.f = 1
+                        elseif key:lower() == "s" then
+                            ctrl.b = -1
+                        elseif key:lower() == "a" then
+                            ctrl.l = -1
+                        elseif key:lower() == "d" then
+                            ctrl.r = 1
+                        end
+                    end)
+                    mouse.KeyUp:connect(function(key)
+                        if key:lower() == "w" then
+                            ctrl.f = 0
+                        elseif key:lower() == "s" then
+                            ctrl.b = 0
+                        elseif key:lower() == "a" then
+                            ctrl.l = 0
+                        elseif key:lower() == "d" then
+                            ctrl.r = 0
+                        end
+                    end)
+                    Fly()
+                end)
+                
+                Corner_4.Name = "Corner"
+                Corner_4.Parent = Fly
+                
+                Noclip.Name = "Noclip"
+                Noclip.Parent = ScrollingFrame
+                Noclip.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+                Noclip.Position = UDim2.new(0.0897959173, 0, 0.0872235894, 0)
+                Noclip.Size = UDim2.new(0, 200, 0, 50)
+                Noclip.Font = Enum.Font.Arcade
+                Noclip.Text = "Noclip"
+                Noclip.TextColor3 = Color3.fromRGB(0, 0, 0)
+                Noclip.TextScaled = true
+                Noclip.TextSize = 14.000
+                Noclip.TextWrapped = true
+                Noclip.MouseButton1Down:Connect(function()
+                    game.StarterGui:SetCore("SendNotification", {
+                        Title = "Noclip";
+                        Text = "press v to noclip/unoclip";
+                        Duration = 5;
+                    })
+                    local noclipm = false
+                    game:GetService("RunService").Stepped:Connect(function()
+                        if noclipm then
+                            game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+                
+                        end
+                    end)
+                
+                    local p = game.Players.LocalPlayer
+                    local mo = p:GetMouse()
+                
+                    mo.KeyDown:connect(function(k)
+                        if k == "v" then
+                            noclipm = not noclipm
+                            p.Character.Humanoid:ChangeState(11)
+                        end
+                    end)
+                
+                end)
+                
+                Corner_5.Name = "Corner"
+                Corner_5.Parent = Noclip
+                
+                
+                
+                
+                Esp.Name = "Esp"
+                Esp.Parent = ScrollingFrame
+                Esp.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+                Esp.Position = UDim2.new(0.0897959173, 0, 0.169533163, 0)
+                Esp.Size = UDim2.new(0, 200, 0, 50)
+                Esp.Font = Enum.Font.Arcade
+                Esp.Text = "Esp"
+                Esp.TextColor3 = Color3.fromRGB(0, 0, 0)
+                Esp.TextScaled = true
+                Esp.TextSize = 14.000
+                Esp.TextWrapped = true
+                Esp.MouseButton1Down:Connect(function()
+                    -- -----------------------------------
+                    --  ___      _   _   _              --
+                    -- / __| ___| |_| |_(_)_ _  __ _ ___--
+                    -- \__ \/ -_)  _|  _| | ' \/ _` (_-<--
+                    -- |___/\___|\__|\__|_|_||_\__, /__/--
+                    --                         |___/    --
+                    -- -----------------------------------
+                    -- -----------------------------------
+                    ALLYCOLOR = {0,255,255}  	--//Color of the ESP  of people on the same team
+                    ENEMYCOLOR =  {255,0,0} 	--//Color of the ESP  of people on NOT the same team
+                    TRANSPARENCY = 0.5			--//Transparency of the ESP
+                    HEALTHBAR_ACTIVATED = true 	--//Renders the Healthbar
+                    --
+                    --
+                
+                    --							!!!Don't Change Anything Below Here Unless You Know What You're Doing!!!
+                
+                    function createFlex()
+                        -- -----------------------------------------------------------------------------------
+                        --[VARIABLES] //Changing may result in Errors!
+                        players = game:GetService("Players") --//Required for PF
+                        faces = {"Front","Back","Bottom","Left","Right","Top"} --//Every possible Enum face
+                        currentPlayer = nil --//Used for the Team-Check
+                        lplayer = players.LocalPlayer --//The LocalPlayer
+                        -- -----------------------------------------------------------------------------------
+                        players.PlayerAdded:Connect(function(p)
+                            currentPlayer = p
+                            p.CharacterAdded:Connect(function(character) --//For when a new Player joins the game 
+                                createESP(character)			
+                            end)		
+                        end)
+                        -- -----------------------------------------------------------------------------------
+                        function checkPart(obj)  if (obj:IsA("Part") or obj:IsA("MeshPart")) and obj.Name~="HumanoidRootPart" then return true end end --//Check if the Part is suitable 
+                        -- -----------------------------------------------------------------------------------
+                        function actualESP(obj) 
+                
+                            for i=0,5 do
+                                surface = Instance.new("SurfaceGui",obj) --//Creates the SurfaceGui
+                                surface.Face = Enum.NormalId[faces[i+1]] --//Adjusts the Face and chooses from the face table
+                                surface.AlwaysOnTop = true
+                
+                                frame = Instance.new("Frame",surface)	--//Creates the viewable Frame
+                                frame.Size = UDim2.new(1,0,1,0)
+                                frame.BorderSizePixel = 0												
+                                frame.BackgroundTransparency = TRANSPARENCY
+                                if currentPlayer.Team == players.LocalPlayer.Team then --//Checks the Players Team
+                                    frame.BackgroundColor3 = Color3.new(ALLYCOLOR[1],ALLYCOLOR[2],ALLYCOLOR[3])	--//If in same Team											
+                                else
+                                    frame.BackgroundColor3 = Color3.new(ENEMYCOLOR[1],ENEMYCOLOR[2],ENEMYCOLOR[3])	--//If in another Team
+                                end
+                
+                            end
+                        end
+                        -- -----------------------------------------------------------------------------------
+                        function createHealthbar(hrp) 
+                            board =Instance.new("BillboardGui",hrp) --//Creates the BillboardGui with HumanoidRootPart as the Parent
+                            board.Name = "total"
+                            board.Size = UDim2.new(1,0,1,0)
+                            board.StudsOffset = Vector3.new(3,1,0)
+                            board.AlwaysOnTop = true
+                
+                            bar = Instance.new("Frame",board) --//Creates the red background
+                            bar.BackgroundColor3 = Color3.new(255,0,0)
+                            bar.BorderSizePixel = 0
+                            bar.Size = UDim2.new(0.2,0,4,0)
+                            bar.Name = "total2"
+                
+                            health = Instance.new("Frame",bar) --//Creates the changing green Frame
+                            health.BackgroundColor3 = Color3.new(0,255,0)
+                            health.BorderSizePixel = 0
+                            health.Size = UDim2.new(1,0,hrp.Parent.Humanoid.Health/100,0)
+                            hrp.Parent.Humanoid.Changed:Connect(function(property) --//Triggers when any Property changed
+                                hrp.total.total2.Frame.Size = UDim2.new(1,0,hrp.Parent.Humanoid.Health/100,0) --//Adjusts the size of the green Frame								
+                            end)
+                        end
+                        -- -----------------------------------------------------------------------------------
+                        function createESP(c) --//Checks and calls the proper function
+                            bugfix = c:WaitForChild("Head") --// *Used so the children of the character arent nil.
+                            for i,v in pairs(c:GetChildren()) do
+                                if checkPart(v) then
+                                    actualESP(v)
+                                end
+                            end
+                            if HEALTHBAR_ACTIVATED then --//If the user decided to
+                                createHealthbar(c:WaitForChild("HumanoidRootPart")) --//Calls the function of the creation
+                            end
+                        end
+                        -- -----------------------------------------------------------------------------------
+                        for i,people in pairs(players:GetChildren())do
+                            if people ~= players.LocalPlayer then
+                                currentPlayer = people
+                                --//Used for Players already in the Game
+                                createESP(people.Character)
+                                people.CharacterAdded:Connect(function(character)
+                                    createESP(character)			
+                                end)
+                            end
+                        end
+                        -- -----------------------------------------------------------------------------------
+                    end --//End of the entire function
+                
+                    createFlex() --// Does exactly that :)
+                end)
+                
+                Corner_6.Name = "Corner"
+                Corner_6.Parent = Esp
+                
+                AimLock.Name = "AimLock"
+                AimLock.Parent = ScrollingFrame
+                AimLock.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+                AimLock.Position = UDim2.new(0.0897959173, 0, 0.242014736, 0)
+                AimLock.Size = UDim2.new(0, 200, 0, 50)
+                AimLock.Font = Enum.Font.Arcade
+                AimLock.Text = "Aimlock"
+                AimLock.TextColor3 = Color3.fromRGB(0, 0, 0)
+                AimLock.TextScaled = true
+                AimLock.TextSize = 14.000
+                AimLock.TextWrapped = true
+                AimLock.MouseButton1Down:Connect(function()
+                    game.StarterGui:SetCore("SendNotification", {
+                        Title =	"AimLock";
+                        Text = "press rightClick to lock on somebodys head";
+                        Duration = 5;
+                    })
+                
+                
+                    local ScreenGui = Instance.new("ScreenGui")
+                    local Aimbot = Instance.new("Frame")
+                    local Title = Instance.new("TextLabel")
+                    local Toggle = Instance.new("TextButton")
+                
+                    --Properties:
+                
+                    ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+                    ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+                
+                    Aimbot.Name = "Aimbot"
+                    Aimbot.Parent = ScreenGui
+                    Aimbot.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+                    Aimbot.Position = UDim2.new(-0.000408537686, 0, 0.645161271, 0)
+                    Aimbot.Size = UDim2.new(0, 116, 0, 132)
+                
+                    Title.Name = "Title"
+                    Title.Parent = Aimbot
+                    Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+                    Title.Size = UDim2.new(0, 116, 0, 45)
+                    Title.Font = Enum.Font.SourceSans
+                    Title.Text = "Aimbot"
+                    Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+                    Title.TextScaled = true
+                    Title.TextSize = 14.000
+                    Title.TextWrapped = true
+                
+                    Toggle.Name = "Toggle"
+                    Toggle.Parent = Aimbot
+                    Toggle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+                    Toggle.Position = UDim2.new(0, 0, 0.336128026, 0)
+                    Toggle.Size = UDim2.new(0, 116, 0, 87)
+                    Toggle.Font = Enum.Font.SourceSans
+                    Toggle.Text = "Off"
+                    Toggle.TextColor3 = Color3.fromRGB(255, 0, 0)
+                    Toggle.TextSize = 50.000
+                    Toggle.TextWrapped = true
+                
+                    -- Scripts:
+                
+                    local function YCUCF_fake_script() -- Toggle.LocalScript 
+                        local script = Instance.new('LocalScript', Toggle)
+                
+                        _G.aimbot = false
+                        local camera = game.Workspace.CurrentCamera
+                        local localPlayer = game:GetService("Players").LocalPlayer
+                
+                        script.Parent.MouseButton1Click:Connect(function()
+                            if _G.aimbot == false then
+                                _G.aimbot = true
+                                script.Parent.TextColor3 = Color3.fromRGB(0, 170, 0)
+                                script.Parent.Text = "On"
+                                function closestPlayer()
+                                    local dist = math.huge
+                                    local target = nil
+                                    for i, v in pairs (game:GetService("Players"):GetPlayers()) do
+                                        if v ~= localPlayer then
+                                            if v.Character and v.Character:FindFirstChild("Head") and v.TeamColor ~= localPlayer.TeamColor and v.Character.Humanoid.Health ~= 0 and _G.aimbot then
+                                                local magnitude = (v.Character.Head.Position - localPlayer.Character.Head.Position).magnitude
+                                                if magnitude < dist then
+                                                    dist = magnitude
+                                                    target = v
+                                                end
+                                            end
+                                        end
+                                    end
+                                    return target
+                                end
+                
+                            else
+                                _G.aimbot = false	
+                                script.Parent.TextColor3 = Color3.fromRGB(255, 0, 0)
+                                script.Parent.Text = "Off"
+                            end
+                        end)
+                
+                        local settings = {
+                            keybind = Enum.UserInputType.MouseButton2
+                        }
+                
+                        local uis = game:GetService("UserInputService")
+                        local aiming = false
+                
+                        uis.InputBegan:Connect(function(input)
+                            if input.UserInputType == settings.keybind then
+                                aiming = true	
+                            end
+                        end)
+                
+                        uis.InputEnded:Connect(function(input)
+                            if input.UserInputType == settings.keybind then
+                                aiming = false
+                            end
+                        end)
+                
+                        game:GetService("RunService").RenderStepped:Connect(function()
+                            if aiming then
+                                camera.CFrame = CFrame.new(camera.CFrame.Position,closestPlayer().Character.Head.Position)
+                            end
+                        end)
+                    end
+                    coroutine.wrap(YCUCF_fake_script)()
+                
+                end)
+                
+                Corner_7.Name = "Corner"
+                Corner_7.Parent = AimLock
+                
+                
+                
+                local Player = game.Players.LocalPlayer
+                local Mouse = Player:GetMouse()
+                
+                
+                Mouse.KeyDown:Connect(function(Key)
+                    if Key == "h"  then
+                        VOLTABeta.Enabled = not VOLTABeta.Enabled
+                    end
+                end)</th>
+             </tr>
+
+        </table>
+        
+
+        
+    </body>
+</html>
